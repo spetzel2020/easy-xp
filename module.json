@@ -1,0 +1,23 @@
+{
+  "name": "easy-xp",
+  "title": "Spetzel's Easy XP",
+  "description" : "When you close the Combat Tracker:<ul><li>See the total of experience for all hostile combatants</li><li>See the per-player-token experience</li><li>Adjust experience for friendlies</li>Adjust experience for partially defeated foes</li><li>Optionally add the experience to players' character sheets</li></ul>",
+  "author" : "Spetzel",
+  "version": "0.5.0",
+  "minimumCoreVersion": "0.6.5",
+  "compatibleCoreVersion": "0.7.7",
+  "languages": [{
+    "lang": "en",
+    "name": "English",
+    "path": "lang/en.json"
+  }],
+  "esmodules" : ["modules/EasyXP.js"
+  ],
+  "styles": ["css/easy-xp.css"],
+  "readme": "https://github.com/spetzel2020/easy-xp/blob/master/README.md",
+  "bugs": "https://github.com/spetzel2020/easy-xp/issues",
+  "changelog": "https://github.com/spetzel2020/easy-xp/blob/master/CHANGELOG.md",
+  "manifest": "https://github.com/spetzel2020/easy-xp/releases/download/v0.5.0/module.json",
+  "download": "https://github.com/spetzel2020/easy-xp/releases/download/v0.5.0/easy-xp.zip",
+  "url": "https://github.com/spetzel2020/easy-xp"
+}
