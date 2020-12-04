@@ -13,10 +13,9 @@
   }],
   "esmodules" : ["modules/EasyXP.js"
   ],
-  "dependencies" : {
-    "name" : "dnd5e",
-    "type" : "system"
-  },
+  "dependencies" : [
+    {"name" : "dnd5e","type" : "system"}
+  ],
   "styles": ["css/easy-xp.css"],
   "readme": "https://github.com/spetzel2020/easy-xp/blob/master/README.md",
   "bugs": "https://github.com/spetzel2020/easy-xp/issues",

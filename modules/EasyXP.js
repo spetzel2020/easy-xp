@@ -9,6 +9,26 @@ export const EASYXP = {
 
 export class EasyXP {
 
+    static init() {
+        game.settings.register(EASYXP.MODULE_NAME, "easyXPVersion", {
+            name: "Quick Encounters Version",
+            hint: "",
+            scope: "system",
+            config: false,
+            default: EASYXP.MODULE_VERSION,
+            type: String
+        });
+        game.settings.register(EASYXP.MODULE_NAME, "displayXPAfterCombat", {
+            name: "EASYXP.DisplayXPAfterCombat.NAME",
+            hint: "EASYXP.DisplayXPAfterCombat.HINT",
+            scope: "world",
+            config: true,
+            visible: game.system.id === "dnd5e",
+            default: true,
+            type: Boolean
+        });
+    }
+
     static async onDeleteCombat(combat, options, userId) {
         //Only works with 5e
         //If the display XP option is set, work out how many defeated foes and how many Player tokens
@@ -143,3 +163,5 @@ export class Dialog3 extends Dialog {
 Hooks.on("deleteCombat", (combat, options, userId) => {
     EasyXP.onDeleteCombat(combat, options, userId);
 });
+
+Hooks.on("init", EasyXP.init);
