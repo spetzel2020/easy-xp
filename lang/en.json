@@ -1,5 +1,10 @@
 {
-  "EXP.id": "easy-xp",
-  "EXP.Version" : "v0.5.0",
-  "EXP.Name": "Spetzel's Easy XP"
+  "EASYXP.id": "easy-xp",
+  "EASYXP.Version" : "v0.5.0",
+  "EASYXP.Name": "Spetzel's Easy XP",
+  "EASYXP.DisplayXPAfterCombat.NAME": "Display XP after Combat",
+  "EASYXP.DisplayXPAfterCombat.HINT": "When you press End Combat or delete Combat Tracker, display total XP of Hostile tokens and XP per Player token",
+  "EASYXP.XPtoAward.TITLE": "XP to award",
+  "EASYXP.XPtoAward.TOTAL": "XP computed for Hostile tokens: ",
+  "EASYXP.XPtoAward.PERPLAYER": "<br>(Non-player Friendly or Neutral not-included)<br>XP per player: "
 }
